@@ -1,0 +1,50 @@
+struct Node{
+	int num;
+	int value;
+	int next;
+};
+
+int link(struct Node i,struct Node s)
+{
+	if(i.value >= s.value){
+		i.next = s.num;
+		return 0;
+	}
+	else{
+		s.next = i.num;
+		return 1;
+	}
+}
+
+int main()
+{
+	int i = 0;
+	int s = 0;
+	struct Node s;
+	struct Node a[10];
+	while(i<10)
+	{
+		a[i].num = i;
+		a[i].value = i*i-5*i;
+		a[i].next = i+1;
+		i = i+1;
+	}
+	i = 0;
+
+	while(i<10)
+	{
+		while(s<10)
+		{
+			if(link(a[i],a[s]) ==1)
+			{
+				a[i].value = a[s].value;
+				a[i].next = i + 1;
+			}
+			s = s + 1;
+		}
+
+		s = 0;
+		i = i + 1;
+	}
+	return 0;
+}
