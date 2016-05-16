@@ -1,4 +1,0 @@
-int func()
-{
-	float X_1 = 2.42e-3;
-}

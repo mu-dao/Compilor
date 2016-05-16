@@ -1,7 +1,0 @@
-int add(int a, int b)
-{
-	int x,y;
-	x = a;
-	y = b;
-	z = x + y;
-}
