@@ -1,0 +1,6 @@
+int main()
+{
+	int o_n=512;
+	int d_n=0127;
+	int dd_n=0XAdF0;
+}

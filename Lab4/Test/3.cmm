@@ -1,0 +1,8 @@
+int main(){
+	int n = read();
+	while(n != 0){
+		write(n * n);
+		n = read();
+	}
+	return 0;
+}

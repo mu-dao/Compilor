@@ -1,0 +1,12 @@
+struct ABC{
+	int x,y;
+};
+int main(){
+	int k;
+	struct ABC hhh;
+	int a = read();
+	hhh.x = a;
+	hhh.y = a;
+	write(hhh.x+hhh.y);
+	return 0;
+}

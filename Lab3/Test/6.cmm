@@ -1,0 +1,39 @@
+struct ABC{
+	int x,y,z;
+};
+
+int judge(struct ABC temp){
+	int res;
+	if(temp.x > temp.y){
+		if(temp.x > temp.z){
+			res = temp.x; 
+		}
+		else{
+			res = temp.z;
+		}
+	}
+	else{
+		if(temp.y > temp.z){
+			res = temp.y;
+		}
+		else{
+			res = temp.z;
+		}
+	}
+	return res;
+}
+
+int main(){
+	int a = read();
+	int b = read();
+	int c = read();
+	int r;
+	struct ABC myabc;
+	myabc.x = a;
+	myabc.y = b;
+	myabc.z = c;
+
+	r = judge(myabc);
+	write(r);
+	return 0;
+}

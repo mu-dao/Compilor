@@ -1,0 +1,22 @@
+struct AA{
+	int m;
+};
+int bigger(struct AA i,struct AA j){
+	if(i.m > j.m){
+		return i.m;
+	}
+	else{
+		return j.m;
+	}
+}
+int main(){
+	int a = read();
+	int b = read();
+	struct AA I,J;
+	int n;
+	I.m = a;
+	J.m = b;
+	n = bigger(I,J);
+	write(n);
+	return 0;
+}

@@ -1,0 +1,15 @@
+struct ABC{
+	int x;
+	int y;
+};
+
+int main(){
+	int a = read();
+	int b = read();
+	struct ABC test;
+	test.x = a;
+	test.y = b;
+	write(test.x);
+	write(test.y);
+	return 0;
+}

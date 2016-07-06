@@ -1,0 +1,14 @@
+struct AAA{
+	int a;
+	int b;
+};
+
+int main(){
+	int n;
+	struct AAA aa;
+	aa.a = 1;
+	aa.b = 2;
+	n = aa.a + aa.b;
+	write(n);
+	return 0;
+}

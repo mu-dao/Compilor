@@ -1,0 +1,15 @@
+int bigger(int i,int j){
+	if(i>j){
+		return i;
+	}
+	else{
+		return j;
+	}
+}
+int main(){
+	int a = read();
+	int b = read();
+	int n = bigger(a,b);
+	write(n);
+	return 0;
+}
